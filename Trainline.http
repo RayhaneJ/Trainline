@@ -1,0 +1,6 @@
+@Trainline_HostAddress = http://localhost:5132
+
+GET {{Trainline_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

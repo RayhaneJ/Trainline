@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "Trainline.Controllers.RoomAvailabilityController",
+    "Method": "GetAllAvailabilities",
+    "RelativePath": "RoomAvailability/{room}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Trainline.Controllers.RoomAvailabilityController",
+    "Method": "CheckSlotsAvailability",
+    "RelativePath": "RoomAvailability/{room}/check-availability",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dayOfWeek",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "duration",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Trainline.Controllers.RoomAvailabilityController",
+    "Method": "GetAvailabilitiesByBusinessDayOfWeek",
+    "RelativePath": "RoomAvailability/{room}/dayOfWeek/{dayOfWeek}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dayOfWeek",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
