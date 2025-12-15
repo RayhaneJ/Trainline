@@ -24,7 +24,7 @@ namespace Trainline.RoomAvailability
             };
 
             var response = await _httpClient.GetFromJsonAsync<RoomAvailabiltyResponse>(_gitHubUrlAvailability, options);
-            return response.Availabilities ?? throw new InvalidOperationException("No availability was returned");
+            return response?.Availabilities ?? throw new InvalidOperationException("No availability was returned");
         }
     }
 }
